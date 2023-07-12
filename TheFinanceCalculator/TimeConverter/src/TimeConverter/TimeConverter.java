@@ -1,0 +1,20 @@
+package TimeConverter;
+
+import java.util.Scanner;
+
+public class TimeConverter {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter minutes");
+		int minutes=scan.nextInt();
+		convertToHours(minutes);
+		double res= convertToHours(minutes);
+		System.out.println(res);
+	}
+	public static double convertToHours(int minutes)
+	{
+		return minutes/60;
+	}
+	}
+
